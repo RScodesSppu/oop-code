@@ -1,0 +1,72 @@
+package oop;
+import java.util.Scanner;
+class complexNo{
+float real,img;
+public complexNo() {
+real=0;
+img=0;
+}
+public complexNo(float a, float b) {
+real=a;
+img=b;
+
+}
+public void display(complexNo C1,complexNo C2) {
+System.out.println(&quot;first complex no is (&quot;+C1.real+&quot;)+(&quot;+C1.img+&quot;)i&quot;);
+System.out.println(&quot;second complex no is (&quot;+C2.real+&quot;)+(&quot;+C2.img+&quot;)i&quot;);
+
+}
+public void addnum(complexNo C1,complexNo C2) {
+float Real,Img;
+Real=(C1.real+C2.real);
+Img=(C1.img+C2.img);
+System.out.println(&quot;addition of two numbers is (&quot;+Real+&quot;)+(&quot;+Img+&quot;)i&quot;);
+}
+public void subnum(complexNo C1,complexNo C2) {
+float Real,Img;
+Real=(C1.real-C2.real);
+Img=(C1.img-C2.img);
+System.out.println(&quot;substraction of two numbers is (&quot;+Real+&quot;)+(&quot;+Img+&quot;)i&quot;);
+}
+public void mulnum(complexNo C1,complexNo C2) {
+
+float Real,Img;
+Real=(C1.real*C2.real)-(C1.img*C2.img);
+Img=(C1.img*C2.img)+(C1.img*C2.real);
+System.out.println(&quot;multiplication of two numbers is (&quot;+Real+&quot;)+(&quot;+Img+&quot;)i&quot;);
+}
+public void divnum(complexNo C1,complexNo C2) {
+float Real,Img;
+Real=(C1.real*C2.real +C1.img*C2.img)/(C2.real*C2.real+C2.img*C2.img);
+Img=(C1.img*C2.real-C1.real*C2.img)/(C2.real*C2.real+C2.img*C2.img);
+System.out.println(&quot;division of two numbers is (&quot;+Real+&quot;)+(&quot;+Img+&quot;)i&quot;);
+}
+
+}
+
+public class Main {
+
+public static void main(String[] args) {
+float num1,num2,num3,num4;
+complexNo cal=new complexNo();
+Scanner Sc=new Scanner(System.in);
+System.out.println(&quot;Enter the real part of first number&quot;);
+num1=Sc.nextFloat();
+System.out.println(&quot;Enter the img part of first number&quot;);
+num2=Sc.nextFloat();
+complexNo com1=new complexNo(num1,num2);
+System.out.println(&quot;Enter the real part of second number&quot;);
+num3=Sc.nextFloat();
+System.out.println(&quot;Enter the img part of second number&quot;);
+num4=Sc.nextFloat();
+complexNo com2=new complexNo(num3,num4);
+Sc.close();
+
+cal.display(com1, com2);
+cal.addnum(com1, com2);
+cal.subnum(com1, com2);
+cal.mulnum(com1, com2);
+cal.divnum(com1, com2);
+}
+
+}

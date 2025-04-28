@@ -1,0 +1,43 @@
+oop 1 algorithm: Complex Number Operations
+Start
+
+Define a class complex with:
+
+Two data members: real and imaginary (both of type double)
+
+A default constructor that initializes both values to 0
+
+A parameterized constructor to initialize values using input
+
+A method add() to add two complex numbers
+
+A method subtract() to subtract two complex numbers
+
+A method multiply() to multiply two complex numbers
+
+A method divide() to divide two complex numbers
+
+A method display() to print the complex number
+
+In the practice2 class:
+
+Create two complex number objects num1 and num2 with given values (e.g., 4+5i and 6+7i)
+
+Call add() with num1 and num2 and store the result in sum
+
+Display the result of addition
+
+Call subtract() and store the result in difference
+
+Display the result of subtraction
+
+Call multiply() and store the result in multiple
+
+Display the result of multiplication
+
+Call divide() and store the result in div
+
+Display the result of division
+
+End
+

@@ -1,0 +1,52 @@
+Algorithm: Vehicle Interface Implementation
+Start
+
+Define an interface Vehicle with the following methods:
+
+gearChange() – to handle gear changes
+
+speedUp() – to increase speed
+
+applyBrakes() – to slow down or stop
+
+Create a class Bicycle that implements Vehicle:
+
+Implement gearChange() to simulate gear change by pedaling
+
+Implement speedUp() to simulate pedaling faster
+
+Implement applyBrakes() to simulate slowing down a bicycle
+
+Create a class Bike that implements Vehicle:
+
+Implement gearChange() to simulate shifting gears on a motorbike
+
+Implement speedUp() to simulate accelerating the engine
+
+Implement applyBrakes() to simulate slowing down a bike
+
+Create a class Car that implements Vehicle:
+
+Implement gearChange() to simulate using the gear shift
+
+Implement speedUp() to simulate pressing the accelerator
+
+Implement applyBrakes() to simulate using the brake pedal
+
+In the Main class:
+
+Create objects of type Vehicle for:
+
+A Bicycle
+
+A Bike
+
+A Car
+
+For each vehicle object:
+
+Call gearChange(), speedUp(), and applyBrakes()
+
+Print messages to show the behavior of each vehicle type
+
+End

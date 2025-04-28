@@ -1,0 +1,60 @@
+Algorithm: Area Calculation Using Abstract Class
+Start
+
+Define an abstract class Shape with:
+
+Two data members: dimension1, dimension2 (type: double)
+
+Method inputData(d1, d2) to assign values to the dimensions
+
+Abstract method compute_area() to be overridden by subclasses
+
+Define a subclass Triangle extending Shape:
+
+Override compute_area() method to compute:
+
+Area of Triangle
+=
+0.5
+×
+base
+×
+height
+Area of Triangle=0.5×base×height
+Print the area of the triangle
+
+Define another subclass Rectangle extending Shape:
+
+Override compute_area() method to compute:
+
+Area of Rectangle
+=
+length
+×
+width
+Area of Rectangle=length×width
+Print the area of the rectangle
+
+In the Main class:
+
+Create a Scanner object to read input from the user
+
+Create an object triangle of type Triangle (as Shape)
+
+Prompt the user to enter base and height for the triangle
+
+Use inputData(base, height) to set dimensions
+
+Call compute_area() to display the area of the triangle
+
+Create an object rectangle of type Rectangle (as Shape)
+
+Prompt the user to enter length and width for the rectangle
+
+Use inputData(length, width) to set dimensions
+
+Call compute_area() to display the area of the rectangle
+
+Close the scanner
+
+End

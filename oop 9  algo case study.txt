@@ -1,0 +1,33 @@
+Algorithm Steps:
+Start
+
+In Main class:
+
+Create an account using CreateAccount.createAccount() which prompts user for personal details.
+
+After account creation, proceed to deposit and withdrawal operations.
+
+Deposit Operation:
+
+Prompt the user for the deposit amount.
+
+Validate the deposit amount, ensure it's greater than 0.
+
+If valid, update the account balance.
+
+Withdraw Operation:
+
+Prompt the user for the withdrawal amount.
+
+Check if there are sufficient funds in the account.
+
+If funds are insufficient, print an error.
+
+Otherwise, deduct the withdrawal amount from the account balance.
+
+Display Account Info:
+
+Print the account holder name and current balance.
+
+End
+

@@ -1,0 +1,70 @@
+Algorithm: Employee Payroll System
+Start
+
+Define a base class Employee with:
+
+Data members:
+
+empname (Employee Name)
+
+empid (Employee ID)
+
+address
+
+mailid
+
+mobileno
+
+basicpay (Base Salary)
+
+Constructor to initialize all data members
+
+Method calculateGrossSalary() to compute salary using:
+
+DA = 97% of basic pay
+
+HRA = 10% of basic pay
+
+PF = 12% of basic pay
+
+Staff Club Fund = 0.1% of basic pay
+
+Gross Salary = basicpay + DA + HRA - PF - Staff Club Fund
+
+Method generatePaySlip() to:
+
+Call calculateGrossSalary()
+
+Print employee details and salary breakdown
+
+Define derived classes inheriting from Employee:
+
+Programmer
+
+TeamLead
+
+AssistantProjectManager
+
+ProjectManager
+
+Each class should have a constructor that calls the base Employee constructor using super(...)
+
+In the Main class:
+
+Create an instance of Programmer with specific details
+
+Create an instance of TeamLead with specific details
+
+Create an instance of AssistantProjectManager with specific details
+
+Create an instance of ProjectManager with specific details
+
+For each employee object, call the generatePaySlip() method to display:
+
+Basic Pay
+
+Gross Salary
+
+Employee name and ID
+
+End

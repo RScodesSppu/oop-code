@@ -1,0 +1,69 @@
+Algorithm: Count Elements Based on Custom Conditions Using Generics and Interfaces
+Start
+
+Define a generic interface Condition<T> with a method:
+
+test(T element) → returns true or false based on a condition
+
+Define a generic method countIf(collection, condition) that:
+
+Takes a collection of elements and a condition
+
+Initializes count = 0
+
+Iterates through each element in the collection
+
+If condition.test(element) returns true:
+
+Increment count
+
+Return the final count
+
+Define helper method isPrime(n) that:
+
+Returns false if n < 2
+
+Loops from 2 to n - 1 to check divisibility
+
+Returns false if n is divisible by any number in the loop
+
+Returns true if no divisors are found
+
+Define helper method isPalindrome(n) that:
+
+Stores the original number in c
+
+Reverses the number using modulus and division
+
+Compares reversed number with original
+
+Returns true if they match
+
+In the main method:
+
+Create a list of integers:
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 121, 133]
+
+Define the following Condition<Integer> implementations:
+
+evenCondition: Checks if number is even (n % 2 == 0)
+
+oddCondition: Checks if number is odd (n % 2 != 0)
+
+primeCondition: Uses isPrime(n) method
+
+palindromeCondition: Uses isPalindrome(n) method
+
+Call countIf(numbers, condition) for each of the above conditions
+
+Print:
+
+Count of even numbers
+
+Count of odd numbers
+
+Count of prime numbers
+
+Count of palindrome numbers
+
+End

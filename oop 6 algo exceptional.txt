@@ -1,0 +1,43 @@
+Algorithm: Exception Handling for User Input and Array Access
+Start
+
+Create a Scanner object to read input from the user.
+
+Begin a try block to handle potential exceptions:
+
+Prompt the user to enter two integers.
+
+Read the first number and store it in num1.
+
+Read the second number and store it in num2.
+
+Perform division:
+
+Compute result = num1 / num2.
+
+If num2 == 0, this throws an ArithmeticException.
+
+Print the result of the division.
+
+Create an array of size 2.
+
+Try to access the 4th element of the array using index 3.
+
+This throws an ArrayIndexOutOfBoundsException.
+
+Catch blocks to handle specific exceptions:
+
+If input is invalid and cannot be parsed into an integer →
+Catch NumberFormatException and print an error message.
+
+If division by zero occurs →
+Catch ArithmeticException and print "Cannot divide by zero."
+
+If array index is out of bounds →
+Catch ArrayIndexOutOfBoundsException and print a message.
+
+Finally block:
+
+Close the Scanner to free up resources.
+
+End

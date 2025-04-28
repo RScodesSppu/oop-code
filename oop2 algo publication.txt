@@ -1,0 +1,65 @@
+Algorithm: Publication System (Books and Magazines)
+Start
+
+Define a base class Publication with:
+
+Data members: title, price, copies
+
+Constructor to initialize the above values
+
+Method saleCopy(quantity) to:
+
+Check if the required quantity is available
+
+If yes, reduce copies by quantity and print a success message
+
+If not, print a message indicating insufficient copies
+
+Define a derived class Book that extends Publication:
+
+Additional data member: author
+
+Constructor to initialize title, price, copies, and author
+
+Method orderCopies(quantity) to:
+
+Increase copies by quantity
+
+Print a message confirming the order
+
+Define another derived class Magazine that extends Publication:
+
+Additional data member: currentIssue
+
+Constructor to initialize title, price, copies, and currentIssue
+
+Method orderQty(quantity) to:
+
+Increase copies by quantity
+
+Print a message confirming the order
+
+Method receiveIssue(issue) to:
+
+Set currentIssue to the new issue
+
+Print a message about the received issue
+
+In the practice2 main class:
+
+Create a Book object book1 with values:
+"Java Programming", 29.99, 100, "John Doe"
+
+Create a Magazine object mag1 with values:
+"Tech Today", 5.99, 50, "March 2023"
+
+Call orderCopies(20) on book1 → adds 20 copies
+
+Call orderQty(30) on mag1 → adds 30 copies
+
+Call saleCopy(10) on book1 → sells 10 copies
+
+Call saleCopy(5) on mag1 → sells 5 copies
+
+End
+

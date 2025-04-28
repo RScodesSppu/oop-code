@@ -1,0 +1,79 @@
+Algorithm: Student Record Management Using Serialization
+Start
+
+1. Define the Student class (Serializable):
+Data members:
+
+studentId, name, rollNo, className, marks, address
+
+Constructor to initialize all fields
+
+Getter methods for each field
+
+Override toString() to return a formatted string of student details
+
+2. Define the StudentDatabase class:
+Constant FILE_NAME = "students.dat" to store serialized student objects
+
+a. Method: createDatabase(List<Student>)
+Open an ObjectOutputStream to FILE_NAME
+
+Serialize and write each student object from the list
+
+Close the stream
+
+b. Method: displayDatabase()
+Initialize an empty list to store read student objects
+
+Open an ObjectInputStream on FILE_NAME
+
+Use a loop to read student objects until EOFException is caught
+
+Return the list of students
+
+c. Method: deleteRecord(String studentId)
+Read the current list using displayDatabase()
+
+Remove the student whose studentId matches
+
+Call saveUpdatedDatabase() to overwrite the file
+
+d. Method: updateRecord(Student updatedStudent)
+Read the list from the file
+
+Loop through the list:
+
+If a student's studentId matches, replace the student object with updatedStudent
+
+Call saveUpdatedDatabase()
+
+e. Method: searchRecord(String studentId)
+Read all students from the file
+
+Loop to check for matching studentId
+
+Return the matching student object or null if not found
+
+f. Method: saveUpdatedDatabase(List<Student>)
+Overwrites the file with the updated list using ObjectOutputStream
+
+3. In the Main class:
+Create a StudentDatabase object
+
+Create a list of sample students:
+
+"Alice", "Bob", "Charlie"
+
+Call createDatabase() to store them
+
+Call displayDatabase() and print the records
+
+Call updateRecord() to modify Bob’s marks and address
+
+Call searchRecord() to search for Alice’s record
+
+Call deleteRecord() to delete Charlie’s record
+
+Call displayDatabase() again to show final student list
+
+End
